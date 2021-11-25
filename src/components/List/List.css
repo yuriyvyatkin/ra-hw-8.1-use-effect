@@ -1,0 +1,45 @@
+.List-container {
+  position: relative;
+
+  width: 18rem;
+
+  background-color: #ffffff;
+  border: 1px solid #dfdfdf;
+  border-radius: 5px;
+}
+
+.List__item {
+  padding: 10px 20px;
+}
+
+.List__item:not(:last-child) {
+  border-bottom: 1px solid #dfdfdf;
+}
+
+.List__item:hover {
+  background-color: #0f7ffa;
+}
+
+.List__item:hover .List-item__link {
+  color: #ffffff;
+}
+
+.List.disabled li.List__item:hover {
+  background-color: #ffffff;
+}
+
+.List.disabled li.List__item:hover .List-item__link {
+  color: #313d51;
+}
+
+.List-item__link {
+  display: block;
+  padding: 10px 20px;
+  margin: -10px -20px;
+
+  color: #313d51;
+}
+
+.List.disabled .List-item__link {
+  cursor: auto;
+}

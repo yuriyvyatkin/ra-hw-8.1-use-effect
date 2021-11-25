@@ -1,0 +1,9 @@
+.DetailsList__item {
+  padding: 10px 24px;
+  margin-right: -24px;
+  margin-left: -24px;
+}
+
+.DetailsList__item:not(:last-child) {
+  border-bottom: 1px solid #dfdfdf;
+}

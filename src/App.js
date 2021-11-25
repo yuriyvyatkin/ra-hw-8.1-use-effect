@@ -13,6 +13,7 @@ function App() {
     get('users.json')
       .then((data) => setListItems(data))
       .catch((error) => console.error(error));
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   function handleItemClick({ target }) {

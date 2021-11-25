@@ -19,7 +19,8 @@ export default function Details(props) {
     get(`${id}.json`)
       .then((data) => setContent(data))
       .catch((error) => console.error(error));
-  }, [id]);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   return (
     <div id={id} className="Details">

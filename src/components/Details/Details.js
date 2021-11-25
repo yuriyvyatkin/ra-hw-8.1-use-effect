@@ -20,7 +20,7 @@ export default function Details(props) {
       .then((data) => setContent(data))
       .catch((error) => console.error(error));
   // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  }, [id]);
 
   return (
     <div id={id} className="Details">

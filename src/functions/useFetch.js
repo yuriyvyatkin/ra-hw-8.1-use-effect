@@ -12,16 +12,18 @@ export default function useFetch(baseUrl) {
         .then((data) => {
           setTimeout(() => {
             if (!data) {
-              setLoading(false);
               return reject(data);
             }
-            setLoading(false);
             resolve(data);
           }, 3000);
         })
         .catch((error) => {
-          setLoading(false);
           reject(error);
+        })
+        .finally(() => {
+          setTimeout(() => {
+            setLoading(false);
+          }, 3000);
         });
     });
   }
